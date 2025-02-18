@@ -50,21 +50,17 @@ function getData(db) {
   getall.onerror = (event) => {
 
   };
-  getall.onsuccess = async(event) => {
+  getall.onsuccess = (event) => {
     var resultData = getall.result;
-    for (var i = resultData.length - 1; i >= 0; i--) {
-      await new Promise((resolve) => {
-        setTimeout(() => {
-          var Normaltext = CryptoJS.AES.decrypt(resultData[i], 'secret key 123');
-          var decryptedData = JSON.parse(Normaltext.toString(CryptoJS.enc.Utf8));
-          addData(decryptedData);
-          resolve();
-        }, 3000);
-      });
+    for (var i = 0; i < resultData.length; i++) {
+      var Normaltext = CryptoJS.AES.decrypt(resultData[i], 'secret key 123');
+      var decryptedData = JSON.parse(Normaltext.toString(CryptoJS.enc.Utf8));
+      addData(decryptedData);
     }
   };
   db.close();
   objectStore.clear();
+  //objectStore.clear();
 };
 
 

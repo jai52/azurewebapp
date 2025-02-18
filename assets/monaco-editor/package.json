@@ -2,7 +2,7 @@
   "_args": [
     [
       "monaco-editor@0.20.0",
-      "E:\\Angular\\ngx-al-libs"
+      "/var/lib/jenkins/workspace/ALI0299_Client_QA"
     ]
   ],
   "_from": "monaco-editor@0.20.0",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.20.0.tgz",
   "_spec": "0.20.0",
-  "_where": "E:\\Angular\\ngx-al-libs",
+  "_where": "/var/lib/jenkins/workspace/ALI0299_Client_QA",
   "author": {
     "name": "Microsoft Corporation"
   },
