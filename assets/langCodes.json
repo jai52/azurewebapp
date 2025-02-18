@@ -1,0 +1,8 @@
+[
+    {"id": "de", "name": "German","specificCode":"DEU"},
+    {"id": "en", "name": "English","specificCode":"ENG"},
+    {"id": "fr", "name": "French","specificCode":"DEU"},
+    {"id": "hi", "name": "Hindi","specificCode":"HIN"},
+    {"id": "it", "name": "Italian","specificCode":"ITA"},
+    {"id": "te", "name": "Telugu","specificCode":"TEL"}
+]
